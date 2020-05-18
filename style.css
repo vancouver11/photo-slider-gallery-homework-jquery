@@ -1,0 +1,67 @@
+*{
+	padding: 0;
+	margin: 0
+}
+body{
+	background-color:#ccc8de;
+}
+#gallery{
+	width: 400px;
+	height: 500px;
+	box-shadow: 0 0 2px 1px black;
+	margin: 20px auto 10px auto;
+	overflow: hidden;
+	font-size: 0;
+}
+#gallery .wrapPhoto{
+
+height: 500px;
+/*transition: transform 0.5s ease;*/
+}
+#gallery .wrapPhoto .photo{
+	width: 400px;
+	height: 500px;
+	display: inline-block;
+	background-size: cover
+}
+
+ .directionMove{
+width:100%;
+text-align:center;
+font-size:0;
+}
+
+
+.directionMove div{
+display: inline-block;
+margin-top: 20px;
+box-shadow: 0 0 3px 2px blue;
+border-radius: 10px;
+cursor:pointer;
+}
+.directionMove div:hover{
+	background-color: #B0E0E6
+}
+
+.directionMove .leftMove{
+background-image: url('images/arrow.png');
+background-size:cover;
+width: 80px;
+height: 80px;
+margin-right: 20px;
+}
+.directionMove .rightMove{
+background-image: url('images/arrow.png');
+background-size:cover;
+width: 80px;
+height: 80px;
+transform: rotate(180deg);
+margin-left: 20px;
+}
+
+.trans{
+	transform: rotate(360deg);
+	transition: transform 3.0s ease;
+}
+
+
